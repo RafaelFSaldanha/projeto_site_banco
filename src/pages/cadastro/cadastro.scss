@@ -1,0 +1,191 @@
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    .background-login {
+        height: 99.4%;
+        width: 100%;
+        position: fixed;
+        z-index: 0;
+    }
+
+    .div-opacidade {
+        height: 100vh;
+        width: 100vw;
+        z-index: 1;
+        position: fixed;
+        background-color: #000000d7;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 8vh;
+        width: 100vw;
+        background-color: #00000072;
+        z-index: 2;
+        font-family: Ingrid Darling;
+        color: #ffffff;
+
+        .divLogo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                height: 5vh;
+                margin-left: 1vw;
+            }
+    
+            h2 {
+                font-weight: normal;
+            }
+        }
+
+        .divBotoes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 5vh;
+            width: 11vw;
+            margin-right: 2vw;
+
+            button {
+                background-color: #000000;
+                border: 1px solid #47D629;
+                border-radius: .5vh;
+                padding: .5vh 1vh .5vh 1vh;
+                color: #ffffff;
+                font-family: Nunito;
+                transition: .3s;
+            }
+
+            button:hover {
+                background-color: #47D629;
+                color: #000000;
+                transform: translateY(-0.5vh);
+            }
+        }
+    }
+
+    .div-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 80vh;
+        width: 30vw;
+        z-index: 2;
+        margin-top: 7vh;
+        background-color: #00000074;
+        border-radius: 3vh;
+
+        h1 {
+            font-family: Ingrid Darling;
+            color: #ffffff;
+            margin-top: 5vh;
+        }
+
+        p {
+            font-family: Nunito;
+            color: #ffffff; 
+        }
+
+        .div-inputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 30vh;
+            width: 20vw;
+
+            .div-input {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                color: #ffffff;
+                font-family: Nunito;
+
+                input {
+                    width: 15vw;
+                    outline: none;
+                    border: none;
+                    border-radius: .5vh;
+                }
+
+                input:focus {
+                    border-bottom: 2px solid #47D629;
+                    border-radius: .5vh;
+                }
+                
+                input:hover {
+                outline: 1px solid lightgrey;
+                }
+
+                .input-radio {
+                    height: 2vh;
+                    width: 1vw;
+                }
+            }
+        }
+
+        .div-botoes-forms {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 20vh;
+            
+
+            #input-submit {
+                background-color: #000000;
+                border: 1px solid #47D629;
+                border-radius: .5vh;
+                height: 5vh;
+                width: 7vw;
+                color: #ffffff;
+                font-family: Nunito;
+                transition: .3s;
+            }
+
+            #input-submit:hover {
+                background-color: #47D629;
+                color: #000000;
+                transform: translateY(-0.5vh);
+            }
+
+            .botao-google {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                height: 5vh;
+                width: 17vw;
+                border-radius: 5vh;
+                transition: .3s;
+
+                img {
+                    height: 2.5vh;
+                    margin: 1vh;
+                }
+            }
+
+            .botao-google:hover {
+                background-color: #cbcbcb;
+            }
+        }
+
+        a {
+            color: #47D629;
+            font-family: Nunito;
+            text-decoration: underline;
+            margin-bottom: 5vh;
+        }
+    }
+}
